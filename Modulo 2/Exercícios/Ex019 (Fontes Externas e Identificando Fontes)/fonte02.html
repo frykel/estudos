@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas Específicas</title>
+    <style>
+         /*fontes diferentes podem ser encontradas no site: www.datafont.com 
+         e podem ser usadas baixando o arquivo do site acima e colocando-o na pasta html, posteriormente se usa o código abaixo @font-face. As extensões podem ser .otf ou .ttf*/
+        @font-face {
+                font-family: 'Shouty';
+                src: url('fonts/Shoutyperson.otf') format('opentype');
+                font-weight: normal;
+                font-style: normal;
+                /*Tipos de format():
+                    - opentype geralmente usa otf
+                    - truetype geralmente usa ttf
+                    - embedded-opentype
+                    - truetype-aat (Apple Advanced Typography)
+                    - svg
+                    */
+                /* Para identificar a fonte de um texto em um site podemos usar a extensão do Chrome: Fonts Ninja */
+                /* Para identificar a fonte de uma imagem em um site podemos usar os sites abaixo (Este processo não é 100% de certeza de funcionar):
+                    whatfontis.com
+                    fontsquirrel.com
+                    myfonts.com */
+            }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        h1{
+            font-family: 'Shouty', serif;
+            font-weight: normal;
+        }
+       
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Título de Teste em Fontes!!!</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam nisi consectetur labore velit tenetur odit ad, corrupti, aspernatur fugit repellendus itaque nostrum laudantium. Fugit tempora sit, omnis quaerat commodi nemo.</p>
+    
+</body>
+</html>

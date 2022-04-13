@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Caixa</title>
+    <style>
+        h1{
+            /* 
+                margin: auto; --> esse comando centraliza a caixa na tela
+            */
+            height: 300px;
+            width: 300px;
+            background-color: lightblue;
+
+            border-width: 6px;
+            border-style: inset;
+            border-color: yellow;
+
+            padding-top: 10px;  
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            outline-width: 5px;
+            outline-style: dotted;
+            outline-color: darkblue;
+
+        }
+        h2{
+            /*
+            Ordem do border shorthand: border-width, border-style, border-color
+            */
+            border: 10px solid orangered;
+            /* 
+            Ordem do shorthand do padding: padding-top, padding-right, padding-bottom, padding-left
+            Se os 4 padding foram iguais basta colocar um.
+            Ao colocar 2 medidas: a primeira será o padding-top e padding-bottom, a segunda será o padding-right e padding-left
+            */
+            padding: 15px 15px 15px 15px;
+
+            /*O mesmo conceito utilizado em padding se aplica as configurações e abreviações (shorthand) de margin 
+            margin: 10px auto 20px auto pode ser usado para centralizar a margem e configurar as margens top e bottom*/
+
+            outline: 8px dashed red;
+            
+
+            /* O comando acima é usado como shorthand para abreviar: outline-width, outline-style e outline-color */
+        }
+            
+        a{
+            border-width: 3px;
+            border-style: solid;
+            border-color: brown;
+            display: block;
+        }
+        span{
+            border-width: 2px;
+            border-style: solid;
+            border-color: chocolate;
+        }
+        span#t1{
+            border-width: 2px;
+            border-style: dashed;
+            border-color: chartreuse;
+        }
+        span#q{
+            background-color: darkred  ;
+            color: darkorange;
+            display: inline;
+        }
+        /*O comando display pode ser usado para alterar a forma de visualização de uma caixa, podendo uma box level ser covertida em inline e vice versa, pode-se também fazê-la sumir */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa Box Level</h1>
+    <!--No link criado abaixo foi usado uma # para deixar o link válido, apesar de ele não levar a lugar algum.-->
+    <p>Páragrafos também são exemplos de <span id="t1">caixa box level</span>, mas já os <a href="#">links</a> são exemplos de <span>caixa inline level</span>. Vamos ver como tudo isso funciona.</p>
+    
+    <h2>Simplificando comandos CSS com shorthand (Padding, Margin, Outline e Border) → <span id="q">Veja código</span></h2>
+</body>
+</html>

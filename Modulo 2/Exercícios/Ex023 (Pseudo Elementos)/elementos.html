@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+
+    <style>
+        /*  SELETORES PERSONALIZADOS:
+            # é id
+            . é classe
+            : é pseudoclasse
+            :: é pseudoelement
+            > é children
+
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /*  a:visited modifica links que foram acessados (visitados) */
+        a:visited{
+            color: brown;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        /*  a:active modifica links que foram clicados */
+        a:active{
+            color: blue;
+        }
+
+        /* a::after cria um elemento que modifica para que depois do texto de todos os links apareça a modificação abaixo: */
+        a::after{
+            content: ' [link]';
+            color:darkgrey;
+            font-weight: normal;
+            text-decoration: none;
+        }
+        .especial{
+            background-color: burlywood;
+        }
+        /* a::before cria um elemento que modifica tudo antes de um link de acordo com o escrito abaixo: */
+        .especial::before{
+            content: '☞';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+        <li><a href="https://g1.globo.com/" target="_blank">g1</a></li>
+        <li><a href="https://servlatec.com.br" target="_blank" class="especial">Servlatec</a></li>
+
+
+
+
+    </ul>
+</body>
+</html>

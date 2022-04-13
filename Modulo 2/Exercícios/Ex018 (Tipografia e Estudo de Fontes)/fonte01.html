@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*A declaração acima com 3 tipos de fontes, é para o caso de um dispositivo não ser compátivel com a primeira, ele tentará a segunda, caso não seja compativo tentará a terceira. */
+            
+            /* no caso da "sans-serif" ou "serif" o dispositivo irá colocar uma fonte com essas características que estejam disponíveis no seu banco de dados. 
+            
+            Fonte Serif: Possum a serifa em alguns dos caracteres
+            Fonte Sans-Serif: Não possui serifa*/
+
+            /* 
+            Tamanho das Fones(Font size):
+                Medidas Absolutas:
+                cm, mm, in, px, pt, pc
+
+                Medidas Relativas:
+                em (relativo a altura do M maiúsculo da fonte), ex (relativo a altura X de uma fonte), rem (relativo ao root da fonte), vw (viewport width, relativo a largura da sua tela), vh (viewheight, relativo a altura da tela), %
+                
+                Recomendação da w3c: em e px.
+                Tamanho padrão dos navegadores (geralmente): 16px que geralmente é igual a 1em
+                */
+
+            /* 
+            Font weight (peso da fonte): lighter, normal, bold, bolder ou variação numérica de 100 - 900.
+            OBS:. Não são todas as fontes que tem todos os pesos indicados acima
+            */
+            font: normal bold 1.1em Arial,serif;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: bolder;
+            font-style: oblique;
+            text-decoration: underline;
+
+            /* 
+            Shorthand (encurtando as configurações básicas): as 4 primeiras configurações do h1 acima são bem frenquentes no estilo das CSS, portanto iremos condensar em uma só linha conforme abaixo, usando o comando font
+
+                -font-style --> font-weight --> font-size --> font-family
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat magnam, blanditiis rerum a facere maiores eius esse eum! Dolores corrupti error nulla debitis ratione amet modi sapiente porro doloribus nisi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus necessitatibus vitae, dolorem exercitationem expedita modi temporibus fugiat ab cupiditate. Reiciendis dolore sit aperiam illum atque facilis numquam architecto sint dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, aliquam necessitatibus. Consectetur, eos. Eum itaque nobis odio tempora consequatur, rem natus minus accusamus sit, soluta, porro consequuntur temporibus debitis esse?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo non quas ea dolores expedita, quis error doloremque dolore fugit eveniet esse repellat nulla rerum aut nisi magnam voluptates molestiae debitis!</p>
+    <h2>Subtítulo 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi pariatur voluptates, in sunt, ea iste eius quo maxime aspernatur laudantium possimus laborum. Nostrum quod blanditiis tenetur, delectus recusandae similique excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque provident explicabo fugit maiores praesentium, ratione repellendus atque iste corrupti rerum magni eum esse eveniet ea alias molestiae error. Voluptate, provident.</p>
+</body>
+</html>

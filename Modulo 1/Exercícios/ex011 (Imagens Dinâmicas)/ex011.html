@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto flexível">
+        
+<!--O comando source media verifica a largura da tela baseado em um parâmetro definido e coloca a imagem relacionada ao parâmetro atendido.
+
+A imagem padrão, no exemplo acima o maior tamanho G, é a imagem base e o source funcina nas reduções para M e P
+
+O comando picture serve como um container para vários elementos do comando source que altera a imagem de acordo com o layout da página-->
+
+
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir um áudio em nosso site</p>
+        <ul>
+            <li>Primeira Forma de adicionar audio (veja no código)</li>
+    <audio src="media/Icelandic Arpeggios - DivKid.mp3" controls autoplay muted></audio>
+            <li>Segunda forma de adicionar audio (veja no código)</li>
+    <audio preload="metadata" controls loop>
+        <!--O comando preload carrega previamente o audio na abertura do site seguindo alguns parâmetros:
+        AUTO: Carrega todo o arquivo (cuidado: se o audio for muito grande pode deixar seu site lento)
+        Metadata: Carrega informações sobre o audio como: data, duração...
+        None: Só carrega o áudio com a interação do usuário-->
+        <source src="media/Icelandic Arpeggios - DivKid.mp3" type="audio/mpeg">
+        <source src="media/Icelandic Arpeggios - DivKid.ogg" type="audio/ogg">
+        <source src="media/Icelandic Arpeggios - DivKid.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não suporta esse áudio</p>
+        <!--É possível colocar vários audios dentro do mesmo comando com formatos diferentes, caso o primeiro audio não seja suportado pelo navegador, ele tentará executar o segundo e assim diante-->
+        <p><a href="media/Icelandic Arpeggios - DivKid.mp3">Clique aqui para baixar o audio</a></p>
+    </audio>
+        </ul>
+    <!--O atributo controls faz aparecer os comandos de execução e volume do audio
+    O atributo autoplay executa o audio automaticamente
+    Formatos geralmente suportados por navegadores: MP3, WAV, OGG-->
+</body>
+</html>

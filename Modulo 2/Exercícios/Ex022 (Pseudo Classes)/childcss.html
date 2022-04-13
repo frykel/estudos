@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses com Child</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*A configuração abaixo div > p (também chamado de child, p filho de div), quer dizer todos os parágrafos dentro de uma div terão essa configuração, no caso display: none é de não mostrar o texto */
+        div > p{
+            display: none;
+        }
+        /* A configuração abaixo segue a mesma ideia da de cima, porém ele irá mostrar o texto e configurar seu layout quando o mouse for passado por cima (hover) */
+        div:hover > p{
+            display: block;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(0, 97, 0);
+            width: 200px;
+            text-align: center;
+        }
+        div:hover{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo com Pseudoclasse Hover e conceito de Child</h1>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui para saber seu resultado (Texto escondido)
+        <p>Aprovado</p>
+    </div>
+    <p>Fim do Exercício</p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+@charset "UFT-8";
+
+* {/*Configurações globais da página */
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+body{
+    background-image: linear-gradient(to left,#02735E,#025951,#034159) ;
+}
+p{
+    text-align: justify;
+}
+main{
+    /*cor de fundo*/
+    background-color: white;
+    /*largura da estrutura */
+    width: 1000px;
+    /*distância de borda */
+    padding: 15px;
+    /*margem ao centro (auto) */
+    margin: auto;
+    /*arredondamento da borda */
+    border-radius: 20px;
+    /* sombreamento da borda -->parâmetros (nível de sombra para o lado, nível de sombra para baixo, nível de espalhamento, cor) */
+    box-shadow: 5px 5px 3px #025a4a;
+}
+footer{
+    background-color: #02735E;
+    width: 1000px;
+    padding: 15px;
+    margin: auto;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+}
+p#a{
+    text-align: center;
+    font: bold;
+}
+h1{
+    color: #034159;
+    text-align: center;
+    text-shadow: 1px 1.3px 0 #022c3d;
+}
+h2{
+    color: #025951;
+}

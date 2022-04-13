@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente de Cores</title>
+    
+    <style>
+        *{  /*Configurações globais das CSS */  
+            
+        }
+        body{
+            /* a configuração inicial do gradiente linear pode ser angulos: 10deg,20deg, etc...
+            ou pode ser posição: to bottom, to top, to left ou to right */
+            background-image:radial-gradient(circle, #01CDBE 10%, #005870, #950368 10%, #FBB430,#FF3E0B);
+            background-attachment: fixed;   
+            /* ao inves de liner-gradient, podemos usar radial-gradient e trocar a posição inicial por circle por exemplo */
+        }
+        h1{
+            background-image:linear-gradient(to right, #01CDBE, #005870, #950368, #FBB430,#FF3E0B);    
+            background-attachment: fixed;  
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Gradiente em CSS</h1>
+    <h2>testando</h2>
+</body>
+</html>

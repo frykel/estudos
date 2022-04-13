@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/*
+Em HTML é id = em CSS é #
+em HTML é class = em CSS é .
+
+id geralmente é usado para alterações em locais específicos e para 1 item por vez
+class geralmente é usado para alterações locais em um certo grupo de itens
+
+Configuração de id > configuração de classe > configuração geral
+*/
+
+body{
+    background-image: linear-gradient(to right,#146152,#44803F,#B4CF66,#FFEC5C,#FF5A33);
+    font: normal 16px Arial, verdana, serif;
+}
+h1{
+    text-align: left;
+    color: #146152;
+    margin-left: 10px;
+}
+div{
+    width: 800px;
+    box-shadow: 10px 10px 5px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+h1#principal{
+    text-align: center;
+    color: #0d0057;
+    background-color: #a2bbff;
+    border-radius: 10px;
+    margin-left: 0px;
+    
+}
+h2{
+    margin-left: 20px;
+}
+p{
+    text-indent: 60px;
+    text-align: justify;
+    margin-left: 5px;
+}
+/*Ao não especificar a qual elemento a classe pertence, conforme abaixo, posso usar em qualquer tipo de elemento, seja p, h1, h2, etc... */
+.basico{
+    color: #44803F;
+    font-weight: bold;
+}
+.intermediario{
+    color: #cab303;
+    font-weight: bold;
+}
+.avancado{
+    color: darkred;
+    font-weight: bold;
+}
+.destaque{
+    background-color: darkkhaki;
+}

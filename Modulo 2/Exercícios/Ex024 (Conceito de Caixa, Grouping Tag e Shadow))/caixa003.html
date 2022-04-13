@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tag</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+            margin-left: 0px;
+            margin-right: 0px;
+
+        }
+        h1{
+            background-color: white;
+            padding: 5px;
+            text-align: center;
+        }
+        header{
+            background-color: white;
+            padding: 5px;
+            margin: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 20px;
+        }
+        nav{
+            
+            background-color: darkcyan;
+            padding: 3px;
+            font-weight: bold;
+            box-shadow: 1px 1px 3px 2px black;
+            /*O comando box-shadow acima cria uma sombra, foi usado uma short hand para largura, altura, borrão,  espalhamento e cor da sombra 
+            
+            Pode-se criar sombra interna usando o comando inset após box-shadow:
+            */
+            
+           
+        }
+        nav>a{
+            text-decoration: none;
+            color: white;
+            margin-right: 25px;
+                     
+            
+        }
+        nav>a:hover{
+            text-decoration: underline;
+        }
+        a{
+            text-align: center;
+
+
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        article{
+            background-color: lightgrey;
+        }
+        article>aside{
+            background-color: rgb(114, 113, 113);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            border-radius: 10px 20px;
+        }
+             /*configura as bordas cima-esquerda e baixo direita / cima direita e baixo esquerda
+        
+        O comando margin dentro do footer>p abaixo foi usado para zerar a margem do parágrafo dentro do footer, pois ao colocar um padding do footer automaticamento foi setado uma margem de 16px do parágrafo */
+        footer>p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--Grouping tags: div, span, header, footer, main, nav...-->
+    <!-- As tags de header, footer, main e nav na real são div mas com conceito semântico:
+        header: conceito de cabeçalho
+        main: conceito de conteúdo principal
+        footer: conceito de rodapé
+        nav: menus do site
+    
+        E isso muda as prioridades na pesquisa dos mecanismos de busca do Google por exemplo.-->
+    
+    <header>
+        <h1>Bem Vindo</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+        
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias de Hoje</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate, deleniti nihil laborum repellat placeat fuga distinctio quae, eveniet incidunt doloribus fugiat ducimus iure quis eum quod necessitatibus dicta facilis!</p>
+                <aside>
+                    <p>Escrito por Silvio</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Silvio</p>
+
+    </footer>
+
+</body>
+</html>
