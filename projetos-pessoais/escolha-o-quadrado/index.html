@@ -9,6 +9,14 @@
         body{
             background-color: darkcyan;
         }
+        div#q3{
+            font-size: 48px;
+            font-weight: bold;
+        }
+        div#q3>h1{
+            font-size: 0.6em;
+            font-weight: bold;
+        }
         div.quadradol1{
             border: 2px solid black;
             border-radius: 10px;
@@ -37,8 +45,8 @@
             margin: 10px;
         }
         h1{
-            font-size: 60pt;
-            margin-top: 45px;
+           padding: 0px;
+           margin: 0px;
             text-align: center;
         }
         main{
@@ -46,12 +54,15 @@
         }
         img{
             height: 150px;
-            width: 300px;
+            width: 200px;
+            margin: 0px;
         }
-        div#q1:hover{
-            
-            
+        
+        div:hover{
+            background-color: aqua;
+            display: inline-block;
         }
+       
         
 
     </style>
@@ -60,48 +71,84 @@
 <main>
     <img src="imagens/logo-transparente.png" alt="Logo">
 <h2>ESCOLHA SEU NÚMERO E GANHE SEU PRÊMIO</h2>
+<input type="button" value="Reiniciar" onclick="recarregar()">
     <p>
         <div class="quadradol1" id="q1">
             <h1>1</h1>
+            <img src="imagens/logo-transparente.png" onclick="clicar1()" alt="imagem" id="img1">
+           
         </div>
         <div class="quadradol1" id="q2">
             <h1>2</h1>
+            <img src="imagens/logo-transparente.png" onclick="clicar2()" alt="imagem" id="img2">
         </div>
         <div class="quadradol1" id="q3">
             <h1>3</h1>
+            <img src="imagens/logo-transparente.png">
         </div>
     </p>
     <p>
         <div class="quadradol2" id="q4">
             <h1>4</h1>
+            <img src="imagens/logo-transparente.png" onclick="clicar4()" alt="imagem" id="img4">  
         </div>
         <div class="quadradol2" id="q5">
             <h1>5</h1>
-        
+            <img src="imagens/logo-transparente.png" onclick="clicar5()" alt="imagem" id="img5">  
         </div>
         <div class="quadradol2" id="q6">
             <h1>6</h1>
-        
+            <img src="imagens/logo-transparente.png" onclick="clicar6()" alt="imagem" id="img6">  
         </div>
     </p>
     <p>
         <div class="quadradol3" id="q7">
             <h1>7</h1>
-        
+            <img src="imagens/logo-transparente.png" onclick="clicar7()" alt="imagem" id="img7">  
         </div>
         <div class="quadradol3" id="q8">
             <h1>8</h1>
-        
+            <img src="imagens/logo-transparente.png" onclick="clicar8()" alt="imagem" id="img8">  
         </div>
         <div class="quadradol3" id="q9">
             <h1>9</h1>
-        
+            <img src="imagens/logo-transparente.png" onclick="clicar9()" alt="imagem" id="img9">  
         </div>
     </p>
 
 
 </main>
     
+ <script>
+ var i1 = document.getElementById('img1')
+ var i2 = document.getElementById('img2')
+ var i3 = document.getElementById('q3')
+ i3.addEventListener('click', clicar3)
+ var i4 = document.getElementById('img4')
+ var i5 = document.getElementById('img5')
+ var i6 = document.getElementById('img6')
+ var i7 = document.getElementById('img7')
+ var i8 = document.getElementById('img8')
+ var i9 = document.getElementById('img9')
+
+function recarregar(){
+    document. location. reload()
+}
+
+ function clicar1(){
     
+    i1.src='imagens/bloco.jpg'
+ }
+ function clicar2(){
+    
+    i2.src='imagens/caneca.jpg'
+ }
+ function clicar3(){
+    
+    i3.innerHTML="Desconto de +15%"
+ }
+ 
+
+ </script>   
 </body>
 </html>
