@@ -7,22 +7,29 @@
     <title>Document</title>
     <style>
         body{
-            /* O comando background size pode ser usado oara definir o tamanho da imagem de fundo, com as seguintes propriedades:
+            /* O comando background size pode ser usado para definir o tamanho da imagem de fundo, com as seguintes propriedades:
         Porcentagem: vai ocupar a porcentagem definida da viewport ou de onde ela esta inserida
         Numero fixo (ex: 100px): vai ocupar o tamanho definido
         Auto: Vai mostrar a imagem em seu tamanho original
         Contain: Vai fazer a imagem ser 100% exibida na tela, mesmo que apareça cortes laterais ou de topo e fundo
         Cover: Vai cobrir toda a tela com a imagem, mesmo que tenha que não mostrar parte dela.
         */
+        /*Para fazer com que uma imagem de fundo acompanhe a rolagem da página, podemos usar o comando de vínculo (background-attachment) */
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
+            background-attachment: fixed;
+            /*Shorthand - Background
+                color>image>position>repeat>[size]>attachment
+
+                No exemplo de cima: background black url('imagens/wallpaper002.jpg') center center no-repeat cover fixed
+            */
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 500px;
             padding: 10px;
             margin: auto;  
             border: 1px solid blue;
@@ -35,6 +42,20 @@
     <main>
         <h1>Teste de Fundo de Imagem</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate aut ratione deserunt. Quibusdam inventore repellat quae quam tenetur explicabo sapiente ea numquam, beatae aspernatur ipsum et dolorem similique deserunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate aut ratione deserunt. Quibusdam inventore repellat quae quam tenetur explicabo sapiente ea numquam, beatae aspernatur ipsum et dolorem similique deserunt!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate aut ratione deserunt. Quibusdam inventore repellat quae quam tenetur explicabo sapiente ea numquam, beatae aspernatur ipsum et dolorem similique deserunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate aut ratione deserunt. Quibusdam inventore repellat quae quam tenetur explicabo sapiente ea numquam, beatae aspernatur ipsum et dolorem similique deserunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate aut ratione deserunt. Quibusdam inventore repellat quae quam tenetur explicabo sapiente ea numquam, beatae aspernatur ipsum et dolorem similique deserunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate aut ratione deserunt. Quibusdam inventore repellat quae quam tenetur explicabo sapiente ea numquam, beatae aspernatur ipsum et dolorem similique deserunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate aut ratione deserunt. Quibusdam inventore repellat quae quam tenetur explicabo sapiente ea numquam, beatae aspernatur ipsum et dolorem similique deserunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate aut ratione deserunt. Quibusdam inventore repellat quae quam tenetur explicabo sapiente ea numquam, beatae aspernatur ipsum et dolorem similique deserunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate aut ratione deserunt. Quibusdam inventore repellat quae quam tenetur explicabo sapiente ea numquam, beatae aspernatur ipsum et dolorem similique deserunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate aut ratione deserunt. Quibusdam inventore repellat quae quam tenetur explicabo sapiente ea numquam, beatae aspernatur ipsum et dolorem similique deserunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate aut ratione deserunt. Quibusdam inventore repellat quae quam tenetur explicabo sapiente ea numquam, beatae aspernatur ipsum et dolorem similique deserunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate aut ratione deserunt. Quibusdam inventore repellat quae quam tenetur explicabo sapiente ea numquam, beatae aspernatur ipsum et dolorem similique deserunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate aut ratione deserunt. Quibusdam inventore repellat quae quam tenetur explicabo sapiente ea numquam, beatae aspernatur ipsum et dolorem similique deserunt!</p>
+
 
     </main>
     
