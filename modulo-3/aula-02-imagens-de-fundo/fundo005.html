@@ -15,17 +15,22 @@
         Cover: Vai cobrir toda a tela com a imagem, mesmo que tenha que não mostrar parte dela.
         */
         /*Para fazer com que uma imagem de fundo acompanhe a rolagem da página, podemos usar o comando de vínculo (background-attachment) */
-            background-color: black;
+           /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
             background-attachment: fixed;
+            */
             /*Shorthand - Background
                 color>image>position>repeat>[size]>attachment
-
+            
                 No exemplo de cima: background black url('imagens/wallpaper002.jpg') center center no-repeat cover fixed
+
+                Na teoria a Shorthand para size (W3C) está implementada, mas na prática ainda não funciona. Pode ser que no futuro ela seja devidamente colocada.
             */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
         main{
             background-color: white;

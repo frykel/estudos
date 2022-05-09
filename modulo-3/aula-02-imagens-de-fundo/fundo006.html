@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Para centralizar horizontalmente uma caixa no CSS, podemos utilizar o comando margin: auto
+        porém, isso não funciona com a centralização vertical.
+        
+        Para isso podemos usar o comando position por padrão o comando vem sempre 'position: relative'
+        Na caixa maior que irá conter a menor usamos --> position: relative
+        Na caixa menor que estará dentro da maior usamos --> position: absolute
+
+        O comando 'position: absolute' nos permite usar dois outros comandos: 'left' e 'top' que irá definir de onde a caixa de dentro irá começar a parecer a partir da posição padrão cima esquerda
+
+        O comando 'transform' pode ser usado para modificar a posição de uma caixa, no caso usaremos 'transform: translate()' que irá transladar a caixa uma determinada distância.
+        */
+        #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 500px;
+            background-color: purple;
+            padding-top: 20px;
+
+        }
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            
+            transform: translate(-50%,-50%);
+            
+            
+            
+        }
+
+    </style>
+</head>
+<body>
+<section id="container">
+    <article id="conteudo">
+
+    </article>
+</section>    
+    
+</body>
+</html>
