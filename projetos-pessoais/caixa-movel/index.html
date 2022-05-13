@@ -21,6 +21,7 @@
             background-color: lightgrey;
             font-size: 16pt;
             font-weight: bold;
+            margin-top: 70px;
         }
         main{
             margin: auto;
@@ -32,27 +33,91 @@
             text-align: center;
             padding-bottom: 100px;
         }
-        div#muda2{
-            display: none;
-        }
-        div#muda3{
-            display: none;
-            margin-top: 20px;
-        }
-        div#muda1:{
-            display: none;
-        }
+       .hidden{
+           display: none;
+       }
 
     </style>
 </head>
-<body>
-    <h1>Você é feio?</h1>
+<body onload="some('muda2','muda3','muda4','muda5','muda6','muda7')" >
+  <section id="h">
+      <h1 >QUER GANHAR R$ 1.000,00? Clique em SIM!!</h1>
+  </section>
 
     <main>
-        <div>SIM</div>
-        <div id="muda1">NÃO</div>
-        <div id="muda2">NÃO</div>
-        <div id="muda3">NÃO</div>
+        <div onclick="muda()">NÃO</div>
+        <div id="muda1" onmouseover="esconde1('muda1','muda2')">SIM</div>
+        <div id="muda2" onmouseover="esconde2('muda2','muda3')">SIM</div>
+        <div id="muda3" onmouseover="esconde3('muda3','muda4')">SIM</div>
+        <div id="muda4" onmouseover="esconde4('muda4','muda5')">SIM</div>
+        <div id="muda5" onmouseover="esconde5('muda5','muda6')">SIM</div>
+        <div id="muda6" onmouseover="esconde6('muda6','muda7')">SIM</div>
+        <div id="muda7" onmouseover="escondez('muda7')">SIM</div>
+
     </main> 
+    <script>
+        function esconde1(id,id2){
+            document.getElementById(id).style.display='none'
+            document.getElementById(id2).style.display='block'
+            document.getElementById(id2).style.marginTop='100px'
+        }
+        function esconde2(id,id2){
+            document.getElementById(id).style.display='none'
+            document.getElementById(id2).style.display='block'
+            document.getElementById(id2).style.marginTop='100px'
+            document.getElementById(id2).style.marginLeft='300px'
+            
+        }
+        function esconde3(id,id2){
+            document.getElementById(id).style.display='none'
+            document.getElementById(id2).style.display='block'
+            document.getElementById(id2).style.marginTop='-190px'
+            document.getElementById(id2).style.marginLeft='300px'
+        }
+        function esconde4(id,id2){
+            document.getElementById(id).style.display='none'
+            document.getElementById(id2).style.display='block'
+            document.getElementById(id2).style.marginTop='-190px'
+            document.getElementById(id2).style.marginLeft='-100px'
+        }
+        function esconde5(id,id2){
+            document.getElementById(id).style.display='none'
+            document.getElementById(id2).style.display='block'
+            document.getElementById(id2).style.marginTop='-90px'
+            document.getElementById(id2).style.marginLeft='100px'
+        }
+        function esconde6(id,id2){
+            document.getElementById(id).style.display='none'
+            document.getElementById(id2).style.display='block'
+            document.getElementById(id2).style.marginTop='150px'
+            document.getElementById(id2).style.marginLeft='300px'
+        }
+        function escondez(id){
+            document.getElementById(id).style.display='none'
+            var a = document.getElementById('h')
+            a.innerHTML = '<strong>QUE PENA, VOCÊ PERDEU</strong>.'
+            a.style.textAlign='center'
+            a.style.fontSize='30pt'
+
+            
+        }
+        function some(x,id2,id3,id4,id5,id6,id7){
+            document.getElementById(x).style.display='none'
+            document.getElementById(id2).style.display='none'
+            document.getElementById(id3).style.display='none'
+            document.getElementById(id4).style.display='none'
+            document.getElementById(id5).style.display='none'
+            document.getElementById(id6).style.display='none'
+            document.getElementById(id7).style.display='none'
+            
+        }
+        function muda(){
+            var a = document.getElementById('h')
+            a.innerHTML = '<strong>QUE PENA, VOCÊ PERDEU</strong>.'
+            a.style.textAlign='center'
+            a.style.fontSize='30pt'
+
+        }
+    </script>
 </body>
 </html>
