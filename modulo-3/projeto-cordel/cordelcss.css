@@ -65,7 +65,7 @@ section#joaninha{
     background-attachment: scroll;
     padding-top: 60px;
     padding-bottom: 60px;
-    height: 600px;
+    height: 100%;
 
 }
 article#caixa1{
@@ -84,7 +84,7 @@ section#livro{
     background-attachment: scroll;
     padding-top: 60px;
     padding-bottom: 60px;
-    height: 600px;
+    height: 100%;
 }
 
     article#caixa{
